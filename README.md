@@ -10,7 +10,7 @@ We at **Malloc** are investigating:
 - Practical deployment considerations for PQ-WireGuard
 - Performance optimization strategies
 - Alternative post-quantum cryptographic constructions
-- [Add other specific focus areas of your study]
+- Integration to mobile environments
 
 ## Key Components
 
