@@ -1,32 +1,42 @@
 # PQ-WireGuard: Post-Quantum Extension Study by Malloc
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Research](https://img.shields.io/badge/Research-Post--Quantum-brightgreen)](https://eprint.iacr.org/2020/379.pdf)
 
-This repository contains Malloc's feasibility study extending the post-quantum WireGuard handshake work originally developed by  Andreas Hülsing, Kai-Chun Ning, Florian Weber, and Phil Zimmermann [Andreas Hülsing, Kai-Chun Ning, Peter Schwabe, Florian Weber, and Philip R. Zimmermann: Post-quantum WireGuard.
-2021 IEEE Symposium on Security and Privacy (SP), IEEE (2021), pp 304–321]
+This repository contains Malloc Security's research implementation of a post-quantum secure extension to the WireGuard VPN protocol. Our work builds upon the foundational [PQ-WireGuard paper](https://eprint.iacr.org/2020/379.pdf) by Andreas Hülsing, Kai-Chun Ning, Florian Weber, and Phil Zimmermann, focusing on practical deployment considerations for quantum-resistant cryptography.
 
 ## About Malloc's Extension Work
 
 We at **Malloc** are investigating:
-- Practical deployment considerations for PQ-WireGuard
-- Performance optimization strategies
-- Alternative post-quantum cryptographic constructions
-- Integration to mobile environments
+- **Practical Deployment**: Real-world implementation challenges
+- **Performance Optimization**: Throughput and latency improvements
+- **Cryptographic Alternatives**: Evaluation of different PQC algorithms
+- **Mobile Integration**: Android/iOS compatibility research
+- **Hybrid Approaches**: Combining classical and post-quantum cryptography
 
 ## Key Components
 
 | Component | Description |
 |-----------|-------------|
-| `WireGuard/` | Modified Linux kernel module implementing PQ-WireGuard |
-| `tamarin/` | Formal verification proofs (including our extensions) |
-| `analysis/` | Security parameter analysis tools (enhanced by Malloc) |
-| `benchmarks/` | Our performance evaluation scripts and results |
-| `docs/` | Malloc's technical notes and findings |
+| `WireGuard/` | Modified Linux kernel module with PQ enhancements |
+| `tamarin/` | Extended formal verification proofs (Tamarin models) |
+| `analysis/` | Enhanced security parameter analysis toolkit |
+| `benchmarks/` | Comprehensive performance evaluation suite |
+| `docs/` | Technical documentation and research findings |
 
 ## Getting Started
 
+### Prerequisites
+- Linux kernel 5.4+ (headers matching your running kernel)
+- GNU Make 4.0+
+- GCC 9.0+ or Clang 12.0+
+- Python 3.8+ (for benchmarks)
+- Tamarin prover 1.6.1+ (for verification)
+
+
 ### 1. Build the Kernel Module
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/MallocSecurity/PQ-Wireguard.git
 cd pq-wireguard/WireGuard
 make
 sudo make install
