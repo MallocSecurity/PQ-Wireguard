@@ -48,14 +48,16 @@ tamarin-prover --prove pq_wireguard_malloc.spthy
 
 ### Current Enhancements
 
-Hybrid Handshake: Quantum-safe + classical ECDH fallback
-Optimized Arithmetic: AVX2-accelerated lattice operations
-Enhanced Analysis: New failure probability modeling
-Network Profiles: AWS/GCP performance baselines
-Performance Results
+- **Hybrid Handshake**: Quantum-safe + classical ECDH fallback  
+- **Optimized Arithmetic**: AVX2-accelerated lattice operations  
+- **Enhanced Analysis**: New failure probability modeling  
+- **Network Profiles**: AWS/GCP performance baselines  
 
-Scenario	Original (ms)	Malloc (ms)	Improvement
-Handshake	4.3	3.1	28%
-1G Transfer	142	118	17%
-100 Connections	890	720	19%
+### Performance Results
+
+| Scenario           | Original (ms) | Malloc (ms) | Improvement |
+|--------------------|--------------:|------------:|------------:|
+| Handshake          | 4.3           | 3.1         | 28%         |
+| 1G Transfer        | 142           | 118         | 17%         |
+| 100 Connections    | 890           | 720         | 19%         |
 
