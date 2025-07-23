@@ -69,10 +69,17 @@ cd tamarin
 tamarin-prover --prove pq_wireguard_malloc.spthy
 ```
 
-#### 1.4.  To run the Python2 script for choosing parameters of Dagger:
-1. Install python2 packages numpy, matplotlib (and perhaps some backports packages, depending on the system)
-2. and then run: cd param-select && python2 select_param.py
+#### 1.4. Running Dagger Parameter Selection (Python 2)
 
+```bash
+# Install required dependencies
+pip install numpy matplotlib
+
+# Some systems may require additional backports:
+pip install futures backports.functools_lru_cache
+
+# Run parameter selection tool
+cd param-select && python2 select_param.py
 
   
 ### Current Enhancements
