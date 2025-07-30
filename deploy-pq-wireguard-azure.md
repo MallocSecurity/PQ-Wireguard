@@ -52,7 +52,7 @@ sudo apt update && sudo apt install -y \
 
 ```bash
 # Clone PQ-WireGuard source (adjust URL if needed)
-git clone https://your.repo.url/PQ-WireGuard.git
+git clone [https://your.repo.url/PQ-WireGuard.git](https://github.com/MallocSecurity/PQ-Wireguard)
 cd PQ-WireGuard/WireGuard
 
 # Build and install
