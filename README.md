@@ -5,6 +5,7 @@
 
 This repository contains Malloc Security's research implementation of a post-quantum secure extension to the WireGuard VPN protocol, building upon the foundational [PQ-WireGuard paper](https://eprint.iacr.org/2020/379.pdf).
 
+Our report on the feasibility study is vaiable at [PQ-Wireguard - PQC-Malloc Feasibility Study] (https://github.com/MallocSecurity/PQ-Wireguard/blob/main/PQ-Wireguard_Mobile_Feasibility.pdf)
 
 ## Azure Deployment
 
